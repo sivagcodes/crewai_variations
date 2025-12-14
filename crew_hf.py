@@ -6,9 +6,7 @@ from crewai import Agent, Task, Crew, LLM
 
 os.environ["LITELLM_LOG"] = "ERROR"  # Only critical errors
 os.environ["LITELLM_NO_COLD_STORAGE"] = "1"  # Skip advanced logging
-# Validate API key
-if not os.getenv("GROQ_API_KEY"):
-    raise ValueError("Set GROQ_API_KEY environment variable first")
+
 
 # ✅ CORRECTED: Use valid Groq model name
 llm = LLM(
