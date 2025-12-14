@@ -3,7 +3,7 @@ from crewai import Agent, Task, Crew, LLM
 
 # ⚠️ NEVER commit API keys to code! Use environment variables instead
 # Then remove this line:
-os.environ["GROQ_API_KEY"] = 
+
 os.environ["LITELLM_LOG"] = "ERROR"  # Only critical errors
 os.environ["LITELLM_NO_COLD_STORAGE"] = "1"  # Skip advanced logging
 # Validate API key
