@@ -1,0 +1,17 @@
+Notes
+1) Install python 3.12.5
+2) create crew venv
+3) install crewai 1.1.0 ()Others not working as expected 
+pip install "crewai==1.1.0"
+4) For 
+llm = LLM(
+    model="ollama/tinyllama",          # note the slash form used in docs
+    base_url="http://192.168.0.95:11434", # Ollama default
+    api_key="ollama",                  # any non-empty string; not actually used by Ollama
+    temperature=0.2
+)
+5) for gemini below is essesntial
+pip install "crewai[google-genai]"
+likewise pip install groq
+
+
