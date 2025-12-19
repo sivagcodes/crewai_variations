@@ -1,0 +1,35 @@
+# Core Frameworks
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+crewai>=0.80.0  # Optional: Only if you are running the agent examples
+
+# Provider Integrations (The "Zoo")
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+langchain-groq
+langchain-nvidia-ai-endpoints
+langchain-huggingface
+langchain-ollama
+dashscope       # Required for Alibaba/Qwen (ChatTongyi)
+
+# Utilities & Networking
+requests
+aiohttp
+colorama        # For the colored terminal output
+python-dotenv   # To load API keys from .env file
+botocore        # Often needed if using AWS Bedrock or specific cloud utils
+
+# Optional: Specialized
+huggingface_hub # Needed for some HF endpoint utilities
+
+google-generativeai 
+groq 
+huggingface_hub 
+langchain-openai 
+langchain-anthropic 
+langchain-google-genai 
+langchain-groq 
+langchain-huggingface 
+python-dotenv
